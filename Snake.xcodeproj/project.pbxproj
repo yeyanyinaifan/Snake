@@ -13,6 +13,7 @@
 		7E5AAC7F1D89394E001FA3BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E5AAC7D1D89394E001FA3BE /* Main.storyboard */; };
 		7E5AAC811D89394F001FA3BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E5AAC801D89394F001FA3BE /* Assets.xcassets */; };
 		7E5AAC841D89394F001FA3BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E5AAC821D89394F001FA3BE /* LaunchScreen.storyboard */; };
+		7E5AAC8D1D89396F001FA3BE /* Snake.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5AAC8C1D89396F001FA3BE /* Snake.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		7E5AAC801D89394F001FA3BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7E5AAC831D89394F001FA3BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7E5AAC851D89394F001FA3BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E5AAC8B1D89396F001FA3BE /* Snake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Snake.h; sourceTree = "<group>"; };
+		7E5AAC8C1D89396F001FA3BE /* Snake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Snake.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,8 @@
 				7E5AAC781D89394E001FA3BE /* AppDelegate.m */,
 				7E5AAC7A1D89394E001FA3BE /* ViewController.h */,
 				7E5AAC7B1D89394E001FA3BE /* ViewController.m */,
+				7E5AAC8B1D89396F001FA3BE /* Snake.h */,
+				7E5AAC8C1D89396F001FA3BE /* Snake.m */,
 				7E5AAC7D1D89394E001FA3BE /* Main.storyboard */,
 				7E5AAC801D89394F001FA3BE /* Assets.xcassets */,
 				7E5AAC821D89394F001FA3BE /* LaunchScreen.storyboard */,
@@ -150,6 +155,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E5AAC8D1D89396F001FA3BE /* Snake.m in Sources */,
 				7E5AAC7C1D89394E001FA3BE /* ViewController.m in Sources */,
 				7E5AAC791D89394E001FA3BE /* AppDelegate.m in Sources */,
 				7E5AAC761D89394E001FA3BE /* main.m in Sources */,
