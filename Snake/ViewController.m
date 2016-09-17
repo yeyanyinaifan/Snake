@@ -46,7 +46,7 @@
         }
     }
 
-    
+    NSLog(@"试试");
 
     //取出蛇尾
     UIView *lastView = [self.snake.bodys firstObject];
