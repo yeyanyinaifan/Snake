@@ -46,7 +46,7 @@
         }
     }
 
-    NSLog(@"试试");
+//    NSLog(@"试试");
 
     //取出蛇尾
     UIView *lastView = [self.snake.bodys firstObject];
@@ -98,18 +98,20 @@
     
     float x = currentPoint.x-self.beginPoint.x;
     float y = currentPoint.y-self.beginPoint.y;
+    if (x!=0||y!=0) {
+        float xOffset = fabs(x)/(fabs(x)+fabs(y));
+        float yOffset = fabs(y)/(fabs(x)+fabs(y));
+        if (x<0) {
+            xOffset*=-1;
+        }
+        if (y<0) {
+            yOffset*=-1;
+        }
+        //    NSLog(@"偏移值x=%f  y=%f",xOffset,yOffset);
+        self.snake.xOffset = xOffset;
+        self.snake.yOffset = yOffset;
+    }
     
-    float xOffset = fabs(x)/(fabs(x)+fabs(y));
-    float yOffset = fabs(y)/(fabs(x)+fabs(y));
-    if (x<0) {
-        xOffset*=-1;
-    }
-    if (y<0) {
-        yOffset*=-1;
-    }
-    NSLog(@"偏移值x=%f  y=%f",xOffset,yOffset);
-    self.snake.xOffset = xOffset;
-    self.snake.yOffset = yOffset;
 }
 
 -(void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{

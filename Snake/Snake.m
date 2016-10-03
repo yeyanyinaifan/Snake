@@ -43,6 +43,7 @@
     UIView *headView = [self.bodys lastObject];
 //    得到蛇头的中心点
     CGPoint headCenter = headView.center;
+    
     //根据遥感得到的XY方向的偏移壁纸 设置头的偏移
     headCenter = CGPointMake(headCenter.x+self.xOffset*self.speed, headCenter.y+self.yOffset*self.speed);
     
